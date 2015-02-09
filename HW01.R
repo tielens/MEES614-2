@@ -42,6 +42,8 @@ for (i in 1:length(liveTab$Var1)){
     rast[i]=1
   } 
   else if(liveTab$Var1[i]<2){ rast[1]=0}
-  iter[i]=100}
+}
+
+#the loop seems to be working, but I can't get it to keep running.There is a new section of live cells in the matrix though- so part of it is working.
 plot(rast)
 
