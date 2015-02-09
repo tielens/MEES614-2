@@ -36,8 +36,8 @@ liveTab <- as.data.frame(table(live[,2]), stringsAsFactors=F)
 liveTab$Var1 <- as.numeric(liveTab$Var1)
 
 l<-as.data.frame(table(live[ ,2]))
-
-for (i in 1:length(liveTab$Var1)){
+x<-1000
+for (i in 1:length(x)){
   if (liveTab$Var1[i]>2){
     rast[i]=1
   } 
